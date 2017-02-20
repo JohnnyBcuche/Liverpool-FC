@@ -1,0 +1,59 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.img:hover{
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 300px;
+	background-image: url("../img/HomeCover.jpg");
+	background-size: 100% 100%;
+}
+section{
+	margin: 20px 30px 5px 30px;
+}
+section p{
+	text-indent:1.5cm;
+	font-size: 15px;
+	font-weight: bold;
+	text-align: justify;
+	color: white;
+}
+section p a{
+	text-decoration: none;
+	color: yellow;
+}
+.div{
+	float: right;
+    width: 180px;
+	margin: 0px 5px 5px 5px;
+    padding: 5px;
+    border-style: none;
+}
+
+/*Responsive*/
+
+@media screen and (max-width: 950px){
+	.img:hover{
+	height: 220px;
+}
+	section p{
+	font-size: 13px;
+}
+}
+
+@media screen and (max-width: 600px) {
+.img:hover{
+	height: 180px;
+}
+section{
+	margin: 20px 10px 5px 10px;
+}
+section p{
+	font-size: 11px;
+}
+.div{
+	float: none;
+}
+}

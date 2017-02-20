@@ -1,0 +1,164 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html { 
+  background: url("../img/The-Kop.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+main{
+	background-color: #ff0000;
+	max-width:1000px;
+	margin:0 auto;
+	height: auto;
+}
+.img{
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 300px;
+	background-image: url("../img/Thekop.png");
+	background-size: 100% 100%;
+}
+nav ul{
+	background-color: #cc0000;
+	margin: 10px 0 0 0;
+	overflow: hidden;
+	color: white;
+	text-align: center;
+	-webkit-transition: max-height 0.4s;
+	-ms-transition: max-height 0.4s;
+	-moz-transition: max-height 0.4s;
+	-o-transition: max-height 0.4s;
+	transition: max-height 0.4s;
+	}
+nav ul li{
+	display: inline-block;
+}
+li a{
+	text-decoration: none;
+	text-align: center;
+	color: inherit;
+	font-family: fantasy;
+	font-size: 29px;
+	background-color: #cc0000;
+	padding: 0px 32px 0px 6px;
+}
+a:hover{
+	background: #ff3333;
+	color: #ffff1a;
+}
+.handle{
+	width: 100%;
+	background: #990000;
+	box-sizing: border-box;
+	cursor: pointer;
+	color: white;
+	text-decoration: none;
+	text-align: left;
+	font-family: fantasy;
+	font-size: 29px;
+	display: none;
+	padding-left: 6px;
+}
+article{
+	max-width: 95%;
+	height: auto;
+	background: #ff1a1a;
+	position: relative;
+	margin-top: 30px;
+	margin-left: 30px;
+	margin-right: 30px;
+	padding: 10px;
+	color: white;
+}
+#muzika{
+	width: 200px;
+	padding: 40px 0 0 15px;
+}
+footer{
+    width: 100%;
+    height: 200px;
+    background: #cc0000;
+	position: relative;
+    bottom: 0;
+}
+footer img{
+    width: 75px;
+    height: auto;
+    float: right;
+    margin: 0px 50px 0 0;
+}
+.klasa {
+	font-size: 12px;
+	text-align: center;
+	position: relative;
+	margin: 60px 50px 0 155px;
+}
+#sat{
+	margin: 25px 5px 5px 50px;
+	padding: 10px 0;
+	color: yellow;
+	font-size: 15px;
+}
+#datum{
+	margin: -32px 5px 5px 170px;
+	color: yellow;
+	font-size: 16px;
+}
+
+/*Responsive*/
+
+@media screen and (max-width: 950px) {
+.img{
+	height: 220px;
+}
+nav ul{
+	max-height: 0;
+}
+.showing{
+	max-height: 20em;
+}
+nav ul li{
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+}
+li a {
+	font-size: 25px;
+}
+.handle{
+	display: block;
+	font-size: 25px;
+}
+}
+
+
+@media screen and (max-width: 600px) {
+.img{
+	height: 180px;
+}
+li a {
+	font-size: 20px;
+}
+.handle{
+	font-size: 20px;
+}
+article{
+	max-width: 100%;
+	margin-left: 0;
+	margin-right: 0;
+}
+footer{
+	height: 140px;
+}
+footer a img{
+    display: none;
+}
+.klasa {
+	margin: 0;
+	font-size: 9px;
+}
+}

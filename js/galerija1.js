@@ -1,0 +1,19 @@
+	var image1 = new Image();
+	image1.src = "img/gallery/academy.jpg";
+	var image2 = new Image();
+	image2.src = "img/gallery/Anfield.jpg";
+	var image3 = new Image();
+	image3.src = "img/gallery/fans.jpg";
+	var image4 = new Image();
+	image4.src = "img/gallery/first_team.jpg";
+	var image5 = new Image();
+	image5.src = "img/gallery/logo.jpg";
+	var image6 = new Image();
+	image6.src = "img/gallery/manager.jpg";
+	var image7 = new Image();
+	image7.src = "img/gallery/melwood.jpg";
+	var image8 = new Image();
+	image8.src = "img/gallery/press_conference.jpg";
+	var image9 = new Image();
+	image9.src = "img/gallery/trophy_room.jpg";
+	

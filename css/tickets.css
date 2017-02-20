@@ -1,0 +1,113 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.img:hover{
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 300px;
+	background-image: url("../img/TicketsCover.jpg");
+	background-size: 100% 100%;
+}
+.conteiner{
+	width: 100%;
+	height: auto;
+	overflow: auto;
+}
+.content{
+	width: 70%;
+	height: auto;
+	overflow: auto;
+	margin: 5% auto 2% auto;
+	background: #ff1a1a;
+}
+form{
+	width: 70%;
+	margin: 2% auto 2% auto;
+	font-size: 18px;
+	color: white;
+}
+#dugme
+{
+	display:none;
+}
+.text{
+	width: 300px;
+	height: 20px;
+	font-size: 15px;
+	padding: 5px;
+}
+
+label{
+	width: 200px;
+	display: inline-block;
+	padding: 5px;
+}
+form p{
+	padding: 10px;
+	border-left: 10px solid yellow;
+	border-right: 10px solid yellow;
+}
+select{
+	font-size: 13px;
+	width: 35%;
+	padding: 1px;
+	margin-left: -14%
+}
+
+button{
+	width: 40%;
+	height: 50px;
+	font-size: 20px;
+	margin: 0 5% 0 0;
+	background: #cc0000;
+	border: 1px solid yellow;
+	color: azure;
+}
+
+/*Responsive*/
+
+@media screen and (max-width: 950px){
+.img:hover{
+	height: 220px;
+}
+.text{
+	width: 200px;
+	height: 20px;
+	font-size: 13px;
+	padding: 5px;
+}
+.content{
+	margin: 10% auto 2% auto;
+}
+}
+
+@media screen and (max-width: 600px){
+.img:hover{
+	height: 180px;
+}
+#year{margin-left: 6px;}
+.text{
+	width: 200px;
+	height: 15px;
+	font-size: 11px;
+	padding: 10px;
+}
+.content{
+	width: 100%;
+	margin: 20% auto 2% auto;
+}
+form{
+	width: 90%;
+	margin: 2% auto 2% auto;
+	font-size: 12px;
+}
+button{
+	width: 40%;
+	height: 35px;
+	font-size: 15px;
+	margin: 10% 5% 15% 20%;
+}
+}

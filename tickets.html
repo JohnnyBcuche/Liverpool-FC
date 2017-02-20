@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="icon" href="img/favicon.png" type="image/x-icon"/>
+	<meta property="og:url" content="http://yoursite.com/index.html"/>
+	<meta property="og:type" content="website"/>
+	<meta property="og:title" content="Liverpul FC"/>
+	<title>Liverpool FC</title>
+	<link rel="stylesheet" href="css/index.css" type="text/css">
+	<link rel="stylesheet" href="css/tickets.css" type="text/css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="js/sat.js"></script>
+	<script src="js/forma.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Liverpool Football Club is a professional association football club based in Liverpool, Merseyside, England. They compete in the Premier League, the top tier of English football. The club has won 5 European Cups, 3 UEFA Cups, 3 UEFA Super Cups, 18 League titles, 7 FA Cups, a record 8 League Cups, and 15 FA Community Shields.">
+	<meta name="keywords" content="liverpool, Liverpool FC, football, merseyside,premier league, cups, season">
+</head>
+<body onload="TacnoVreme(), Datum()">
+	<main>
+	<div class="img"></div>
+	<nav>
+	<ul class="showing">
+		<li><a href="index.html">Home</a></li>
+		<li><a href="team.html">Team</a></li>
+		<li><a href="matchtable.html">Match/Table</a></li>
+		<li><a href="history.html">History</a></li>
+		<li><a href="fans.html">Fans</a></li>
+		<li><a href="tickets.html">Tickets</a></li>
+		<li><a href="gallery.html">Gallery</a></li>
+	</ul>
+	<div class="handle">Menu</div>
+	</nav>
+	
+	<article>
+	<div class="container">
+		
+		<form>
+		<label>Birth:</label>
+				<select id="year">
+				<script>
+				var myDate = new Date();
+				var year = myDate.getFullYear();
+				for(var i = 1900; i<year+1; i++){
+					document.write('<option value="'+i+'">'+i+'</option>'); 
+				}
+				function Godiste()
+				{
+					var godiste = document.getElementById("year").value;
+					godiste = year - godiste;
+					if(godiste>18)
+					{
+						document.getElementById("dugme").style.display="block";
+					}
+					else{
+						alert("Nemate dovoljno godina da biste narucili ulaznicu!");
+					}
+				}
+				</script>
+				</select>&nbsp &nbsp &nbsp
+				<input type="button" id="submit" OnClick="Godiste()" value="Submit">
+		</form>
+		<div class="content">
+			<form id="dugme">
+				
+				<br><br>
+				<label>Name</label>
+				<input type="text" placeholder="Enter name" class="text" id="a">
+				<br><br>
+				<label>Surname</label>
+				<input type="text" placeholder="Enter surname" class="text" id="b">
+				<br><br>
+				<label>E-mail</label>
+				<input type="text" placeholder="yourname@gmail.com" class="text" id="c">
+				<br><br>
+				<label>Address</label>
+				<input type="text" placeholder="Enter address" class="text" id="d">
+				<br><br>
+				<label>Witch side of stadium:</label><br><br>
+				East <input type="radio" name="side" value="istok" > &nbsp &nbsp &nbsp
+				West <input type="radio" name="side" value="zapad"> &nbsp &nbsp &nbsp
+				South <input type="radio" name="side" value="jug"> &nbsp &nbsp &nbsp
+				Kop <input type="radio" name="side" value="Kop" checked> &nbsp &nbsp &nbsp
+				
+				<br><br>
+				<button type="submit" onClick="dugme()">Buy now</button>
+				<br><br><br>
+				<p> Welcome to the Match Day Hospitality Booker: All bookings for Match Day Hospitality are subject to the terms and conditions of Match Day
+				Hospitality, we draw your attention to the section regarding re arranged/postponed games & cancellation charges which will apply. By making a 
+				booking you confirm your agreement to the terms and conditions. If you are making a booking for a third party you shall be deemed to be acting
+				with the consent of such third party to agree the terms and conditions on their behalf. </p>
+				<br><br><br>
+				
+				
+			</form>
+		</div>
+	</div>
+	</article>
+
+	<footer>
+	<div id="sat"></div> 
+	<div id="datum"></div>
+		<a href = "https://www.sc.com/en/"><img src = "img/StandardChartered.png"></a>
+        <a href = "http://www.newbalance.com/men/featured/soccer/"><img src = "img/NewBalance.png"></a>
+        <a href = "https://www.garuda-indonesia.com/other-countries/en/index.page"><img src = "img/GarudaIndonesia.png"></a>
+		<a href = "http://www.carlsberg.com/#!overview"><img src = "img/Carlsberg.png"></a>
+		<a href = "http://www.jack-wolfskin.com/"><img src = "img/Jack.png"></a><br>
+		<p class="klasa">&copy; Copyright 2015 The Liverpool Football Club and Athletic Grounds Limited. All rights reserved.<br> Developed and maintained by the LFC Technology and Transformation Team.
+		Match Statistics supplied by Opta Sports Data Limited.<br> Reproduced under licence from Football DataCo Limited. All rights reserved.
+		</p>
+	</footer>
+	</main>
+
+	<script>
+		$(".handle").on("click", function(){
+			$('nav ul').toggleClass('showing');
+		});
+	</script>
+</body>
+</html>
