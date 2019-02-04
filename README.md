@@ -1,4 +1,4 @@
-My first website as school project.
+My first school project website.
 
 GitHyb Pages: 
 
